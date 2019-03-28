@@ -209,6 +209,11 @@ img {
   color: black;
   font-size: 1.6rem;
 }
+@media (max-width: 800px) {
+  .main-nav .nav-wrapper a {
+    padding: 0 4rem;
+  }
+}
 @media (max-width: 500px) {
   .main-nav .nav-wrapper a {
     padding: 0 3rem;
@@ -234,6 +239,11 @@ header {
   margin: 0 auto;
   max-width: 800px;
 }
+@media (max-width: 800px) {
+  header {
+    max-width: 730px;
+  }
+}
 @media (max-width: 500px) {
   header {
     max-width: 450px;
@@ -249,6 +259,11 @@ header h2 {
 }
 .home {
   border-top: 2px dashed #C0C0C0;
+}
+@media (max-width: 800px) {
+  .home {
+    max-width: 740px;
+  }
 }
 @media (max-width: 500px) {
   .home {
