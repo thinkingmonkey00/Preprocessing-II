@@ -180,7 +180,7 @@ img {
   padding: 0 1rem;
 }
 .main-nav {
-  max-width: 100%;
+  max-width: 1000px;
   margin: 0 auto;
   padding: 2rem 0;
   border-bottom: 2px dashed #C0C0C0;
@@ -242,6 +242,7 @@ header {
 @media (max-width: 800px) {
   header {
     max-width: 730px;
+    padding: 0 2rem;
   }
 }
 @media (max-width: 500px) {
@@ -263,6 +264,7 @@ header h2 {
 @media (max-width: 800px) {
   .home {
     max-width: 740px;
+    padding: 0 2rem;
   }
 }
 @media (max-width: 500px) {
@@ -377,9 +379,9 @@ header h2 {
   width: 85%;
   text-align: center;
 }
-@media (max-width: 500px) {
+@media (max-width: 800px) {
   .home .content-pick .destination .btn {
-    width: 100%;
+    width: 98%;
   }
 }
 @media (max-width: 320px) {
