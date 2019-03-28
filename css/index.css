@@ -167,6 +167,26 @@ img {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
+  padding: 0 1rem;
+}
+.main-nav {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 2rem 0;
+  border-bottom: 2px dashed gray;
+  display: flex;
+  justify-content: space-around;
+}
+.main-nav .nav-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.main-nav .nav-wrapper a {
+  text-decoration: none;
+  padding: 0 2rem;
+  color: black;
+  font-size: 1.6rem;
 }
 .footer {
   width: 100%;
