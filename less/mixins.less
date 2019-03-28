@@ -1,8 +1,21 @@
-@import "custom-mixins.less";
+@import "custom-flex-mixins.less";
 // Mixins in here
+.rounded (@border-radius: 12px){
+    border-radius: @border-radius;
+}
 .nav-a (@text-decoration: none, @padding: 0 2rem, @color: black, @font-size: 1.6rem) {
     text-decoration: @text-decoration;
     padding: @padding;
     color: @color;
     font-size: @font-size;
+}
+
+.fun-button() {
+    .rounded();
+    background-color: @button-bg;
+    color: @white;
+    padding: 1rem;
+    font-size: 1.6rem;
+    width: 85%;
+    text-align: center;
 }

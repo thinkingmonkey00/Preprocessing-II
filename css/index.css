@@ -199,6 +199,13 @@ img {
   font-size: 1.6rem;
   padding: 20px;
 }
+header {
+  margin: 0 auto;
+  max-width: 800px;
+}
+header h2 {
+  padding-top: 1rem;
+}
 .home .content-section {
   margin: 30px 0;
   display: flex;
@@ -244,4 +251,13 @@ img {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+.home .content-pick .destination .btn {
+  border-radius: 12px;
+  background-color: #17A2B8;
+  color: #FFFFFF;
+  padding: 1rem;
+  font-size: 1.6rem;
+  width: 85%;
+  text-align: center;
 }
