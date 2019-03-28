@@ -173,7 +173,7 @@ img {
   max-width: 100%;
   margin: 0 auto;
   padding: 2rem 0;
-  border-bottom: 2px dashed gray;
+  border-bottom: 2px dashed #C0C0C0;
   display: flex;
   justify-content: space-around;
 }
