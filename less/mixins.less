@@ -1,1 +1,44 @@
+@import "custom-flex-mixins.less";
 // Mixins in here
+.rounded (@border-radius: 12px){
+    border-radius: @border-radius;
+}
+.nav-a (@text-decoration: none, @padding: 0 2rem, @color: black, @font-size: 1.6rem) {
+    text-decoration: @text-decoration;
+    padding: @padding;
+    color: @color;
+    font-size: @font-size;
+    @media @tablet {
+        padding: 0 4rem;
+    }
+    @media @mobile {
+        padding: 0 3rem;
+    }
+    @media @mobile-xs {
+        padding: 0 2rem;
+    }
+}
+
+.fun-button(@background-color: @button-bg, @color: @white, @padding: 1rem, @font-size: 1.6rem, @width: 85%, @text-align: center) {
+    .rounded();
+    background-color: @button-bg;
+    color: @white;
+    padding: 1rem;
+    font-size: 1.6rem;
+    width: 85%;
+    text-align: center;
+    @media @tablet {
+        width: 98%;
+    }
+    @media @mobile-xs {
+        width: 80%;
+        margin: @centered-margin;
+    }
+}
+
+// .slideIn(@name, @from, @to) {
+//     @keyframes @name{
+//         0% {transform: @from;}
+//         100% {transform: @to;}
+//     }
+// }
