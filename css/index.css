@@ -146,9 +146,19 @@ h5 {
 h1 {
   font-size: 4rem;
 }
+@media (max-width: 320px) {
+  h1 {
+    font-size: 3.4rem;
+  }
+}
 h2 {
   font-size: 3.2rem;
   padding-bottom: 10px;
+}
+@media (max-width: 320px) {
+  h2 {
+    font-size: 3rem;
+  }
 }
 h4 {
   font-size: 2.5rem;
@@ -177,13 +187,13 @@ img {
   display: flex;
   justify-content: space-around;
 }
-@media (max-width: 500px) {
+@media (max-width: 800px) {
   .main-nav {
     flex-direction: column;
     align-items: center;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 800px) {
   .main-nav h1 {
     padding-bottom: 1rem;
   }
@@ -202,6 +212,11 @@ img {
 @media (max-width: 500px) {
   .main-nav .nav-wrapper a {
     padding: 0 3rem;
+  }
+}
+@media (max-width: 320px) {
+  .main-nav .nav-wrapper a {
+    padding: 0 2rem;
   }
 }
 .footer {
@@ -224,6 +239,11 @@ header {
     max-width: 450px;
   }
 }
+@media (max-width: 320px) {
+  header {
+    max-width: 300px;
+  }
+}
 header h2 {
   padding-top: 1rem;
 }
@@ -233,6 +253,11 @@ header h2 {
 @media (max-width: 500px) {
   .home {
     max-width: 450px;
+  }
+}
+@media (max-width: 320px) {
+  .home {
+    max-width: 300px;
   }
 }
 .home .content-section {
@@ -262,6 +287,7 @@ header h2 {
 @media (max-width: 500px) {
   .home .content-section .img-content {
     width: 100%;
+    padding-left: 0;
   }
 }
 .home .content-section .img-content img {
@@ -283,6 +309,8 @@ header h2 {
   .home .inverse-content .img-content {
     -webkit-box-ordinal-group: 1;
     order: 1;
+    padding-right: 0;
+    width: 100%;
   }
 }
 .home .content-destination {
@@ -319,6 +347,12 @@ header h2 {
     padding-right: 2rem;
   }
 }
+@media (max-width: 500px) {
+  .home .content-pick .destination h4,
+  .home .content-pick .destination p {
+    text-align: center;
+  }
+}
 .home .content-pick .destination .btn {
   border-radius: 12px;
   background-color: #17A2B8;
@@ -331,5 +365,11 @@ header h2 {
 @media (max-width: 500px) {
   .home .content-pick .destination .btn {
     width: 100%;
+  }
+}
+@media (max-width: 320px) {
+  .home .content-pick .destination .btn {
+    width: 80%;
+    margin: 0 auto;
   }
 }
